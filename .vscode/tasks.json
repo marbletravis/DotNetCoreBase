@@ -1,0 +1,46 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet build --project ./zaAbXTwb.Client/zaAbXTwb.Client.csproj",
+            "type": "shell",
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile",
+        },
+        {
+            "label": "run dotnet",
+            "command": "dotnet watch run",
+            "type": "shell",
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "options": {
+                "cwd": "./zaAbXTwb.Client/"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "run ng",
+            "command": "ng serve",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "silent"
+            },
+            "options": {
+                "cwd": "./zaAbXTwb.Client/ClientApp"
+            },
+            "problemMatcher": "$tsc-watch"
+        }
+    ]
+}

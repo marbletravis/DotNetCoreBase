@@ -1,0 +1,8 @@
+﻿{
+  "ApiRelativePath": "api",
+  "Source": "bin\\netcoreapp2.0",
+  "Destination": "ClientApp\\src\\app\\models\\generated",
+  "Files": [ "zaAbXTwb.Client.dll" ],
+  "ControllerBaseClassNames": [ "ApiController" ],
+  "HttpModule": "HttpClientModule"
+}
